@@ -3,7 +3,7 @@ print('------------------------------------------------')
 
 def factor():
     while True:
-        var = eval(input("Enter Integer:"))
+        var = int(input("Enter Integer:"))
         if var < 2:
             print("Invalid input. Enter a number greater than or equal to 2.")
         elif var >= 2:
@@ -18,12 +18,12 @@ def factor():
 
 def prime_no():
     while True:
-        start = eval(input("Enter a number [start]:"))
+        start = int(input("Enter a number [start]:"))
         if start < 0:
             print("Enter a non-negative number")
 
         elif start > 0:
-            end = eval(input("Enter Integer [End]:"))
+            end = int(input("Enter Integer [End]:"))
 
             if end < start:
                 print("Enter a number greater than", start)
